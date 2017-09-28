@@ -101,6 +101,7 @@ angular.module('todomvc')
 			store.put(todo);
 		};
 
+
 		$scope.toggleCompleted = function (todo, completed) {
 			if (angular.isDefined(completed)) {
 				todo.completed = completed;
@@ -117,7 +118,7 @@ angular.module('todomvc')
 
 		$scope.markAll = function (completed) {
 			todos.forEach(function (todo) {
-				if (todo.completed !== completed) {
+				if (todo.completed === completed) {
 					$scope.toggleCompleted(todo, completed);
 				}
 			});
