@@ -3,6 +3,7 @@
 var gulp = require("gulp"),
   rimraf = require("rimraf"),
   concat = require("gulp-concat"),
+  Server = require('karma').Server,
   uglify = require("gulp-uglify");
 
 var paths = {
@@ -48,4 +49,13 @@ gulp.task("min:servicejs", function () {
       .pipe(uglify())
       .pipe(gulp.dest("."));
 });
+
+
 gulp.task("min", ["min:js", "min:dirjs", "min:servicejs"]);
+//gulp.task("test", ["min:js", "min:dirjs", "min:servicejs"]);
+gulp.task('test', function (done) {
+    new Server({
+        configFile: __dirname + '/test/config/karma.conf.js',
+        singleRun: true
+    }, done).start();
+});
