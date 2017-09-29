@@ -176,7 +176,7 @@
 				scope.revertEdits(todo);
 				scope.$digest();
 				expect(scope.todos[0].title).toBe('Uncompleted Item 0');
-			});
+			})
 		});
 	});
 }());
