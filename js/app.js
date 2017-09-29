@@ -27,6 +27,6 @@ angular.module('todomvc', ['ngRoute', 'ngResource'])
 			.when('/', routeConfig)
 			.when('/:status', routeConfig)
 			.otherwise({
-				redirectTo: '/'
-			});
+			    redirectTo: '/'
+			}):
 	});
