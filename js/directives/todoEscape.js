@@ -17,6 +17,9 @@ angular.module('todomvc')
 				}
 			});
 
+
+
+
 			scope.$on('$destroy', function () {
 				elem.unbind('keydown');
 			});
