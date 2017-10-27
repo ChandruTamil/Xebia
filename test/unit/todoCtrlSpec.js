@@ -32,7 +32,7 @@
 		});
 
 		it('should not have any Todos on start', function () {
-			expect(scope.todos.length).toBe(2);
+			expect(scope.todos.length).toBe(0);
 		});
 
 		it('should have all Todos completed', function () {
@@ -49,6 +49,8 @@
 				expect(scope.status).toBe('');
 				expect(scope.statusFilter).toEqual({});
 			});
+
+
 
 			describe('being at /active', function () {
 				it('should filter non-completed', inject(function ($controller) {
