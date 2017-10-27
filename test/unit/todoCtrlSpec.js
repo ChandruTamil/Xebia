@@ -32,7 +32,7 @@
 		});
 
 		it('should not have any Todos on start', function () {
-			expect(scope.todos.length).toBe(0);
+			expect(scope.todos.length).toBe(2);
 		});
 
 		it('should have all Todos completed', function () {
