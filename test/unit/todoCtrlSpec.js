@@ -40,6 +40,8 @@
 			expect(scope.allChecked).toBeTruthy();
 		});
 
+
+
 		describe('the filter', function () {
 			it('should default to ""', function () {
 				scope.$emit('$routeChangeSuccess');
