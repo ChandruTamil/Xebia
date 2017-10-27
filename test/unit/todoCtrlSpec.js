@@ -52,6 +52,9 @@
 
 
 
+
+
+
 			describe('being at /active', function () {
 				it('should filter non-completed', inject(function ($controller) {
 					ctrl = $controller('TodoCtrl', {
