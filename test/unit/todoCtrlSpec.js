@@ -13,6 +13,7 @@
 
 			store = localStorage;
 
+
 			localStorage.todos = [];
 			localStorage._getFromLocalStorage = function () {
 				return [];
