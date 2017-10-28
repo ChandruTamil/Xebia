@@ -12,8 +12,6 @@
 			scope = $rootScope.$new();
 
 			store = localStorage;
-
-
 			localStorage.todos = [];
 			localStorage._getFromLocalStorage = function () {
 				return [];
