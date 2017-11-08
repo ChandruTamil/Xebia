@@ -11,6 +11,8 @@
 		beforeEach(inject(function ($controller, $rootScope, localStorage) {
 			scope = $rootScope.$new();
 
+
+
 			store = localStorage;
 
 
