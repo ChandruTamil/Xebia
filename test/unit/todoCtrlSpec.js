@@ -87,8 +87,7 @@
 			});
 		});
 
-		describe('having no Todos', function () {
-			var ctrl;
+		describe('having no Todos', function (){
 
 			beforeEach(inject(function ($controller) {
 				ctrl = $controller('TodoCtrl', {
